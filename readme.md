@@ -2,6 +2,8 @@
 A production-ready Flutter mobile application for accurate Islamic prayer time calculations, Adhan alarms, and prayer reminders.
 📱 Features
 Core Functionality
+
+
 ✅ Accurate Prayer Times — Calculates Fajr, Dhuhr, Asr, Maghrib, Isha using multiple methods
 ✅ Adhan Alarms — Full-screen Adhan alerts with premium audio
 ✅ Smart Notifications — Pre-prayer reminders + exact prayer time alarms
