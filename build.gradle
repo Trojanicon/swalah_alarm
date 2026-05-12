@@ -1,0 +1,98 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.swalah.app"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId = "com.swalah.app"
+        minSdkVersion = 21
+        targetSdkVersion = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles += getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig = signingConfigs.release
+        }
+        debug {
+            minifyEnabled = false
+            debuggable = true
+        }
+    }
+
+    signingConfigs {
+        release {
+            // Add your signing configuration here
+            // storeFile file('path/to/keystore')
+            // storePassword = 'password'
+            // keyAlias = 'alias'
+            // keyPassword = 'password'
+        }
+    }
+
+    flavorDimensions "store"
+    productFlavors {
+        google {
+            dimension "store"
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // AndroidX
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.work:work-runtime-ktx:2.9.1"
+    implementation "androidx.core:core:1.13.1"
+    implementation "androidx.startup:startup-runtime:1.1.1"
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10"
+
+    // Material
+    implementation "com.google.android.material:material:1.11.0"
+
+    // Notifications
+    implementation "androidx.core:core:1.13.1"
+
+    // Jetpack Compose (optional)
+    implementation "androidx.lifecycle:lifecycle-runtime:2.7.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+
+    // PlayServices (for location if needed)
+    implementation "com.google.android.gms:play-services-location:21.1.0"
+
+    // Test
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+}
