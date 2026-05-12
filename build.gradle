@@ -48,11 +48,11 @@ android {
 
     signingConfigs {
         release {
-            // Add your signing configuration here
-            // storeFile file('path/to/keystore')
-            // storePassword = 'password'
-            // keyAlias = 'alias'
-            // keyPassword = 'password'
+            // signing configuration
+               storeFile file('.....') // later will be updated
+               storePassword = '....' // later will be updated
+               keyAlias = '.....' // later will be updated
+               keyPassword = '.....' // later will be updated
         }
     }
 
