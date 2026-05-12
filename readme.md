@@ -5,8 +5,14 @@ Core Functionality
 
 
 ✅ Accurate Prayer Times — Calculates Fajr, Dhuhr, Asr, Maghrib, Isha using multiple methods
+
+
 ✅ Adhan Alarms — Full-screen Adhan alerts with premium audio
+
+
 ✅ Smart Notifications — Pre-prayer reminders + exact prayer time alarms
+
+
 ✅ Background Execution — Works reliably when app is closed
 ✅ Offline Support — Astronomical calculations work without internet
 ✅ Location Auto-Detection — GPS + manual city search
