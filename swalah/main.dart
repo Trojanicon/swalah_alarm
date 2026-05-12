@@ -1,5 +1,3 @@
-// lib/main.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -9,11 +7,8 @@ import 'theme/app_theme.dart';
 import 'screens/home_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'services/notification_service.dart';
-
-// Background.notification.handler
 @pragma('vm:entry-point')
 void notificationTapBackground(dynamic notificationResponse) {
-  // Handle.background.notification.tap
 }
 
 Future<void> main() async {
@@ -36,12 +31,10 @@ Future<void> main() async {
     ),
   );
 
-  // Initialize notifications
   final notificationService = NotificationService();
   await notificationService.initialize();
   await notificationService.requestPermissions();
 
-  // Check onboarding status
   final prefs = await SharedPreferences.getInstance();
   final onboardingDone = prefs.getBool('onboarding_done') ?? false;
 
