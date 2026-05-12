@@ -1,1 +1,0 @@
-this is basicaly an idea that i just came up with, its about reminding muslims about the 5 orayer times,
