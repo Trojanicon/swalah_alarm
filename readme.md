@@ -1,9 +1,10 @@
 🕌 **Swalah — Islamic Prayer Times & Adhan Reminder App**
 
 A production-ready Flutter mobile application for accurate Islamic prayer time calculations, Adhan alarms, and prayer reminders.
-📱 **Features**
-_Core Functionality_
 
+
+
+📱 **Features**
 
 ✅ Accurate Prayer Times — Calculates Fajr, Dhuhr, Asr, Maghrib, Isha using multiple methods
 
@@ -25,7 +26,7 @@ _Core Functionality_
 
 ✅ Material Design — Dark mode UI with gold Islamic aesthetic
 
-Advanced Features
+**Advanced Features**
 ⏱️ Countdown timer to next prayer
 
 📅 Daily, weekly, monthly prayer schedule views
@@ -56,13 +57,41 @@ API: Aladhan API + offline fallback
 Platform: Android (primary), iOS-compatible
 
 DART SOURCE CODE - SCREENS (7):
-  ✅ lib/screens/home_screen.dart         
+
+  ✅ lib/screens/home_screen.dart  
+  
   ✅ lib/screens/prayer_times_screen.dart 
+  
   ✅ lib/screens/alarm_settings_screen.dart 
-  ✅ lib/screens/settings_screen.dart     
-  ✅ lib/screens/onboarding_screen.dart    
+  
+  ✅ lib/screens/settings_screen.dart  
+  
+  ✅ lib/screens/onboarding_screen.dart
+  
   ✅ lib/screens/adhan_alarm_screen.dart  
+  
   ✅ lib/screens/qibla_screen.dart       
 
-
+DART SOURCE CODE - WIDGETS (3):
+  ✅ lib/widgets/prayer_card_widget.dart   
+  ✅ lib/widgets/countdown_widget.dart     
+  ✅ lib/widgets/next_prayer_widget.dart   
+ 
+KOTLIN SOURCE CODE - ANDROID (4):
+  ✅ android/app/src/main/kotlin/com/swalah/app/MainActivity.kt
+  
+  ✅ android/app/src/main/kotlin/com/swalah/app/AlarmScheduler.kt
+  
+  ✅ android/app/src/main/kotlin/com/swalah/app/AlarmReceiver.kt
+  
+  ✅ android/app/src/main/kotlin/com/swalah/app/AlarmDismissReceiver.kt
+ 
+ANDROID CONFIGURATION (2):
+  ✅ android/app/build.gradle    
+  
+  ✅ android/app/src/main/AndroidManifest.xml
+  
+ 
+iOS CONFIGURATION (1):
+  ✅ ios/Runner/Info.plist.notes        
   
