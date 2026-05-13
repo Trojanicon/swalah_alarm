@@ -54,3 +54,15 @@ Location: Geolocator + Geocoding
 Audio: AudioPlayers
 API: Aladhan API + offline fallback
 Platform: Android (primary), iOS-compatible
+
+DART SOURCE CODE - SCREENS (7):
+  ✅ lib/screens/home_screen.dart         
+  ✅ lib/screens/prayer_times_screen.dart 
+  ✅ lib/screens/alarm_settings_screen.dart 
+  ✅ lib/screens/settings_screen.dart     
+  ✅ lib/screens/onboarding_screen.dart    
+  ✅ lib/screens/adhan_alarm_screen.dart  
+  ✅ lib/screens/qibla_screen.dart       
+
+
+  
